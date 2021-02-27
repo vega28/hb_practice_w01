@@ -205,11 +205,15 @@ def join_strings(words):
     
     For an empty list, you should return an empty string::
     
-        >>> join_strings([])
+        >>> join_strings([]) 
         ''
     """
 
-    return "Not the right thing"
+    joined_string = ''
+    for word in words:
+        joined_string += word
+
+    return joined_string
 
 
 def average(numbers):
