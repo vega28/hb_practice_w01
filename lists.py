@@ -317,7 +317,11 @@ def reverse_list_in_place(items):
         ['I', 'love', 'cookies']
     """
 
-    return []
+    invert = items[::-1]
+    for i in range(len(items)):
+        items[i] = invert[i]
+
+    return items
 
 
 def duplicates(items):
