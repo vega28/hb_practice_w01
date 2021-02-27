@@ -297,7 +297,7 @@ def reverse_list(items):
     return items[::-1]
 
 
-def reverse_list_in_place(items):
+def reverse_list_in_place(items):   ### TODO 
     """Reverse the input list `in place`.
     Reverse the input list given, but do it "in place" --- that is,
     do not create a new list and return it, but modify the original
@@ -347,7 +347,15 @@ def duplicates(items):
         ['apple', 'apple', 'berry']
     """
 
-    return []
+    doubles = set([])
+    counted_items = []
+    for item in items:
+        if item in counted_items:
+            doubles.add(item)
+        else:
+            counted_items.append(item)
+
+    return list(doubles)
 
 
 def find_letter_indices(words, letter):
