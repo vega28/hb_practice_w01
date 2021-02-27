@@ -235,8 +235,17 @@ def average(numbers):
     a feel free to provide a good solution here.)
     """
 
-    return 0
+    if numbers == []:
+        return None
+    else:
+        total = 0
+        n = 0
+        for num in numbers:
+            total += num
+            n += 1
+        return total / n
 
+        
 
 def join_strings_with_comma(words):
     """Return ['list', 'of', 'words'] like "list, of, words".
