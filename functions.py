@@ -85,6 +85,9 @@ def say_hi(name):
 # 3. Write a function called 'print_product' that takes two integers and
 #    multiplies them together. Print the result.
 
+def print_product(num1, num2):
+    print(num1 * num2)
+
 
 # 4. Write a function called 'repeat_string' that takes a string and an integer
 #    and prints the string that many times
