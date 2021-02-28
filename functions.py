@@ -71,6 +71,8 @@ PART TWO:
 # 1. Write a function called 'hello_world' that does not take any arguments and
 #    prints "Hello World".
 
+def hello_world():
+    print('Hello World')
 
 # 2. Write a function called 'say_hi' that takes a name as a string and
 #    prints "Hi" followed by the name.
