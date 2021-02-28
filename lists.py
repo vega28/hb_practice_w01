@@ -345,15 +345,15 @@ def duplicates(items):
         ['apple', 'apple', 'berry']
     """
 
-    doubles = set([])
+    doubles = []
     counted_items = []
     for item in items:
-        if item in counted_items:
-            doubles.add(item)
+        if item in counted_items and item not in doubles:
+            doubles.append(item)
         else:
             counted_items.append(item)
-
-    return list(doubles)
+    doubles.sort()
+    return doubles
 
 
 def find_letter_indices(words, letter):
