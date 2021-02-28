@@ -120,6 +120,13 @@ def is_divisible_by_three(num):
 # 7. Write a function called 'num_spaces' that takes a sentence as one string
 #    and returns the number of spaces.
 
+def num_spaces(sentence):
+    total = 0
+    for char in sentence:
+        if char == ' ':
+            total += 1
+    return total
+
 
 # 8. Write a function called 'total_meal_price' that can be passed a meal price
 #    and a tip percentage. It should return the total amount paid
