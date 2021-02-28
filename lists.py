@@ -309,11 +309,9 @@ def reverse_list_in_place(items):   ### TODO
     
         >>> orig = [1, 2, 3]
         >>> reverse_list_in_place(orig)
-        >>> orig
         [3, 2, 1]
         >>> orig = ["cookies", "love", "I"]
         >>> reverse_list_in_place(orig)
-        >>> orig
         ['I', 'love', 'cookies']
     """
 
@@ -383,7 +381,16 @@ def find_letter_indices(words, letter):
     `None`.)
     """
 
-    return []
+    letter_indices = []
+    for word in words:
+        if letter not in word:
+            letter_indices.append(None)
+        for i, char in enumerate(word):
+            if char == letter:
+                letter_indices.append(i)
+                break
+
+    return letter_indices
 
 
 #####################################################################
